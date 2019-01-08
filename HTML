@@ -1,0 +1,348 @@
+<!--
+sheet-portia        =   JDR inspirer par "My time at Portia"
+
+
+
+-->
+
+
+<div class="sheet-portia">
+    <div class="sheet-attribut sheet-design1">
+        <input type="radio" name="attr_vie1" value="0" class="sheet-vie" checked><span>X</span>
+        <input type="radio" name="attr_vie1" value="1" class="sheet-vie"><span></span>
+        <input type="radio" name="attr_vie1" value="2" class="sheet-vie"><span></span>
+        <input type="radio" name="attr_vie1" value="3" class="sheet-vie"><span></span><p>-1 en <span name="attr_attribut1"></span></p>
+        <input type="radio" name="attr_vie1" value="4" class="sheet-vie"><span></span><p>-1 en <span name="attr_attribut2"></span></p>
+        <input type="radio" name="attr_vie1" value="5" class="sheet-vie"><span></span><p>-1 en <span name="attr_attribut3"></span></p>
+        <input type="radio" name="attr_vie1" value="6" class="sheet-vie"><span></span><p>-1 en <span name="attr_attribut4"></span></p>
+        
+        <input type="number" name="attr_modif1" value="0" style="display: none">
+        <input type="number" name="attr_modif2" value="0" style="display: none">
+        <input type="number" name="attr_modif3" value="0" style="display: none">
+        <input type="number" name="attr_modif4" value="0" style="display: none">
+        
+        <ul>
+            <li><input type="text" name="attr_attribut1" value="Technique"></li>
+            <li>
+                <input type="radio" name="attr_attribut_value1" value="1" checked><span></span>
+                <input type="radio" name="attr_attribut_value1" value="2"><span></span>
+                <input type="radio" name="attr_attribut_value1" value="3"><span></span>
+                <input type="radio" name="attr_attribut_value1" value="4"><span></span>
+                <input type="radio" name="attr_attribut_value1" value="5"><span></span>
+            </li>
+            <li><input type="number" name="attr_attribut_value1" value="1"></li>
+            <li></li>
+        </ul>
+        
+        <ul>
+            <li><input type="text" name="attr_attribut2" value="Physique"></li>
+            <li>
+                <input type="radio" name="attr_attribut_value2" value="1" checked><span></span>
+                <input type="radio" name="attr_attribut_value2" value="2"><span></span>
+                <input type="radio" name="attr_attribut_value2" value="3"><span></span>
+                <input type="radio" name="attr_attribut_value2" value="4"><span></span>
+                <input type="radio" name="attr_attribut_value2" value="5"><span></span>
+            </li>
+            <li><input type="number" name="attr_attribut_value2" value="1"></li>
+            <li></li>
+        </ul>
+
+        <ul>
+            <li><input type="text" name="attr_attribut3" value="Savoir"></li>
+            <li>
+                <input type="radio" name="attr_attribut_value3" value="1" checked><span></span>
+                <input type="radio" name="attr_attribut_value3" value="2"><span></span>
+                <input type="radio" name="attr_attribut_value3" value="3"><span></span>
+                <input type="radio" name="attr_attribut_value3" value="4"><span></span>
+                <input type="radio" name="attr_attribut_value3" value="5"><span></span>
+            </li>
+            <li><input type="number" name="attr_attribut_value3" value="1"></li>
+            <li></li>
+        </ul>
+        
+        <ul>
+            <li><input type="text" name="attr_attribut4" value="Coeur"></li>
+            <li>
+                <input type="radio" name="attr_attribut_value4" value="1" checked><span></span>
+                <input type="radio" name="attr_attribut_value4" value="2"><span></span>
+                <input type="radio" name="attr_attribut_value4" value="3"><span></span>
+                <input type="radio" name="attr_attribut_value4" value="4"><span></span>
+                <input type="radio" name="attr_attribut_value4" value="5"><span></span>
+            </li>
+            <li><input type="number" name="attr_attribut_value4" value="1"></li>
+            <li></li>
+        </ul>
+    </div>
+    
+    <br>
+    
+    <div class="sheet-competence sheet-design1">
+        <ul>
+            <li><span name="attr_attribut1" class="sheet-titre1"></span></li><br>
+            
+            <li><button type="roll" value="/r [[@{attribut_value1}-@{modif1}+@{competence_value1}+?{Modificateur | 0}]]d6sd>[[5-@{avantage1}+@{desavantage1}]]"></button><span></span></li>
+            <li><input type="text" name="attr_competence1" value="Viser"></li>
+            <li>
+                <input type="radio" name="attr_competence_value1" value="1" checked><span></span>
+                <input type="radio" name="attr_competence_value1" value="2"><span></span>
+                <input type="radio" name="attr_competence_value1" value="3"><span></span>
+                <input type="radio" name="attr_competence_value1" value="4"><span></span>
+                <input type="radio" name="attr_competence_value1" value="5"><span></span>
+            </li>
+            <li><input type="number" name="attr_competence_value1" value="1"></li>
+            <li><input type="checkbox" name="attr_avantage1" value="1"><span>-1</span></li>
+            <li><input type="checkbox" name="attr_desavantage1" value="1"><span>+1</span></li>
+            <br>
+            
+            <li><button type="roll" value="/r [[@{attribut_value1}-@{modif1}+@{competence_value2}+?{Modificateur | 0}]]d6sd>[[5-@{avantage2}+@{desavantage2}]]"></button><span></span></li>
+            <li><input type="text" name="attr_competence2" value="Dextérité"></li>
+            <li>
+                <input type="radio" name="attr_competence_value2" value="1" checked><span></span>
+                <input type="radio" name="attr_competence_value2" value="2"><span></span>
+                <input type="radio" name="attr_competence_value2" value="3"><span></span>
+                <input type="radio" name="attr_competence_value2" value="4"><span></span>
+                <input type="radio" name="attr_competence_value2" value="5"><span></span>
+            </li>
+            <li><input type="number" name="attr_competence_value2" value="1"></li>
+            <li><input type="checkbox" name="attr_avantage2" value="-1"><span>-1</span></li>
+            <li><input type="checkbox" name="attr_desavantage2" value="+1"><span>+1</span></li><br>
+            
+            <li><button type="roll" value="/r [[@{attribut_value1}-@{modif1}+@{competence_value3}+?{Modificateur | 0}]]d6sd>[[5-@{avantage3}+@{desavantage3}]]"></button><span></span></li>
+            <li><input type="text" name="attr_competence3" value="Artisanat"></li>
+            <li>
+                <input type="radio" name="attr_competence_value3" value="1" checked><span></span>
+                <input type="radio" name="attr_competence_value3" value="2"><span></span>
+                <input type="radio" name="attr_competence_value3" value="3"><span></span>
+                <input type="radio" name="attr_competence_value3" value="4"><span></span>
+                <input type="radio" name="attr_competence_value3" value="5"><span></span>
+            </li>
+            <li><input type="number" name="attr_competence_value3" value="1"></li>
+            <li><input type="checkbox" name="attr_avantage3" value="-1"><span>-1</span></li>
+            <li><input type="checkbox" name="attr_desavantage3" value="+1"><span>+1</span></li><br>
+        </ul>
+        
+        <ul>
+            <li><span name="attr_attribut2" class="sheet-titre1"></span></li><br>
+            
+            <li><button type="roll" value="/r [[@{attribut_value2}-@{modif2}+@{competence_value4}+?{Modificateur | 0}]]d6sd>[[5-@{avantage4}+@{desavantage4}]]"></button><span></span></li>
+            <li><input type="text" name="attr_competence4" value="Arme"></li>
+            <li>
+                <input type="radio" name="attr_competence_value4" value="1" checked><span></span>
+                <input type="radio" name="attr_competence_value4" value="2"><span></span>
+                <input type="radio" name="attr_competence_value4" value="3"><span></span>
+                <input type="radio" name="attr_competence_value4" value="4"><span></span>
+                <input type="radio" name="attr_competence_value4" value="5"><span></span>
+            </li>
+            <li><input type="number" name="attr_competence_value4" value="1"></li>
+            <li><input type="checkbox" name="attr_avantage4" value="-1"><span>-1</span></li>
+            <li><input type="checkbox" name="attr_desavantage4" value="+1"><span>+1</span></li><br>
+            
+            <li><button type="roll" value="/r [[@{attribut_value2}-@{modif2}+@{competence_value5}+?{Modificateur | 0}]]d6sd>[[5-@{avantage5}+@{desavantage5}]]"></button><span></span></li>
+            <li><input type="text" name="attr_competence5" value="Agilité"></li>
+            <li>
+                <input type="radio" name="attr_competence_value5" value="1" checked><span></span>
+                <input type="radio" name="attr_competence_value5" value="2"><span></span>
+                <input type="radio" name="attr_competence_value5" value="3"><span></span>
+                <input type="radio" name="attr_competence_value5" value="4"><span></span>
+                <input type="radio" name="attr_competence_value5" value="5"><span></span>
+            </li>
+            <li><input type="number" name="attr_competence_value5" value="1"></li>
+            <li><input type="checkbox" name="attr_avantage5" value="-1"><span>-1</span></li>
+            <li><input type="checkbox" name="attr_desavantage5" value="+1"><span>+1</span></li><br>
+            
+            <li><button type="roll" value="/r [[@{attribut_value2}-@{modif2}+@{competence_value6}+?{Modificateur | 0}]]d6sd>[[5-@{avantage6}+@{desavantage6}]]"></button><span></span></li>
+            <li><input type="text" name="attr_competence6" value="Endurance"></li>
+            <li>
+                <input type="radio" name="attr_competence_value6" value="1" checked><span></span>
+                <input type="radio" name="attr_competence_value6" value="2"><span></span>
+                <input type="radio" name="attr_competence_value6" value="3"><span></span>
+                <input type="radio" name="attr_competence_value6" value="4"><span></span>
+                <input type="radio" name="attr_competence_value6" value="5"><span></span>
+            </li>
+            <li><input type="number" name="attr_competence_value6" value="1"></li>
+            <li><input type="checkbox" name="attr_avantage6" value="-1"><span>-1</span></li>
+            <li><input type="checkbox" name="attr_desavantage6" value="+1"><span>+1</span></li><br>
+        </ul>
+        
+        <br><br>
+        
+        <ul>
+            <li><span name="attr_attribut3" class="sheet-titre1"></span></li><br>
+            
+            <li><button type="roll" value="/r [[@{attribut_value3}-@{modif3}+@{competence_value7}+?{Modificateur | 0}]]d6sd>[[5-@{avantage7}+@{desavantage7}]]"></button><span></span></li>
+            <li><input type="text" name="attr_competence7" value="Magie"></li>
+            <li>
+                <input type="radio" name="attr_competence_value7" value="1" checked><span></span>
+                <input type="radio" name="attr_competence_value7" value="2"><span></span>
+                <input type="radio" name="attr_competence_value7" value="3"><span></span>
+                <input type="radio" name="attr_competence_value7" value="4"><span></span>
+                <input type="radio" name="attr_competence_value7" value="5"><span></span>
+            </li>
+            <li><input type="number" name="attr_competence_value7" value="1"></li>
+            <li><input type="checkbox" name="attr_avantage7" value="-1"><span>-1</span></li>
+            <li><input type="checkbox" name="attr_desavantage7" value="+1"><span>+1</span></li><br>
+            
+            <li><button type="roll" value="/r [[@{attribut_value3}-@{modif3}+@{competence_value8}+?{Modificateur | 0}]]d6sd>[[5-@{avantage8}+@{desavantage8}]]"></button><span></span></li>
+            <li><input type="text" name="attr_competence8" value="Culture"></li>
+            <li>
+                <input type="radio" name="attr_competence_value8" value="1" checked><span></span>
+                <input type="radio" name="attr_competence_value8" value="2"><span></span>
+                <input type="radio" name="attr_competence_value8" value="3"><span></span>
+                <input type="radio" name="attr_competence_value8" value="4"><span></span>
+                <input type="radio" name="attr_competence_value8" value="5"><span></span>
+            </li>
+            <li><input type="number" name="attr_competence_value8" value="1"></li>
+            <li><input type="checkbox" name="attr_avantage8" value="-1"><span>-1</span></li>
+            <li><input type="checkbox" name="attr_desavantage8" value="+1"><span>+1</span></li><br>
+            
+            <li><button type="roll" value="/r [[@{attribut_value3}-@{modif3}+@{competence_value9}+?{Modificateur | 0}]]d6sd>[[5-@{avantage9}+@{desavantage9}]]"></button><span></span></li>
+            <li><input type="text" name="attr_competence9" value="Enquêter"></li>
+            <li>
+                <input type="radio" name="attr_competence_value9" value="1" checked><span></span>
+                <input type="radio" name="attr_competence_value9" value="2"><span></span>
+                <input type="radio" name="attr_competence_value9" value="3"><span></span>
+                <input type="radio" name="attr_competence_value9" value="4"><span></span>
+                <input type="radio" name="attr_competence_value9" value="5"><span></span>
+            </li>
+            <li><input type="number" name="attr_competence_value9" value="1"></li>
+            <li><input type="checkbox" name="attr_avantage9" value="-1"><span>-1</span></li>
+            <li><input type="checkbox" name="attr_desavantage9" value="+1"><span>+1</span></li><br>
+        </ul>
+        
+        <ul>
+            <li><span name="attr_attribut4" class="sheet-titre1"></span></li><br>
+            
+            <li><button type="roll" value="/r [[@{attribut_value4}-@{modif4}+@{competence_value10}+?{Modificateur | 0}]]d6sd>[[5-@{avantage10}+@{desavantage10}]]"></button><span></span></li>
+            <li><input type="text" name="attr_competence10" value="Verbe"></li>
+            <li>
+                <input type="radio" name="attr_competence_value10" value="1" checked><span></span>
+                <input type="radio" name="attr_competence_value10" value="2"><span></span>
+                <input type="radio" name="attr_competence_value10" value="3"><span></span>
+                <input type="radio" name="attr_competence_value10" value="4"><span></span>
+                <input type="radio" name="attr_competence_value10" value="5"><span></span>
+            </li>
+            <li><input type="number" name="attr_competence_value10" value="1"></li>
+            <li><input type="checkbox" name="attr_avantage10" value="-1"><span>-1</span></li>
+            <li><input type="checkbox" name="attr_desavantage10" value="+1"><span>+1</span></li><br>
+            
+            <li><button type="roll" value="/r [[@{attribut_value4}-@{modif4}+@{competence_value11}+?{Modificateur | 0}]]d6sd>[[5-@{avantage11}+@{desavantage11}]]"></button><span></span></li>
+            <li><input type="text" name="attr_competence11" value="Charme"></li>
+            <li>
+                <input type="radio" name="attr_competence_value11" value="1" checked><span></span>
+                <input type="radio" name="attr_competence_value11" value="2"><span></span>
+                <input type="radio" name="attr_competence_value11" value="3"><span></span>
+                <input type="radio" name="attr_competence_value11" value="4"><span></span>
+                <input type="radio" name="attr_competence_value11" value="5"><span></span>
+            </li>
+            <li><input type="number" name="attr_competence_value11" value="1"></li>
+            <li><input type="checkbox" name="attr_avantage11" value="-1"><span>-1</span></li>
+            <li><input type="checkbox" name="attr_desavantage11" value="+1"><span>+1</span></li><br>
+            
+            <li><button type="roll" value="/r [[@{attribut_value4}-@{modif4}+@{competence_value12}+?{Modificateur | 0}]]d6sd>[[5-@{avantage12}+@{desavantage12}]]"></button><span></span></li>
+            <li><input type="text" name="attr_competence12" value="Sens"></li>
+            <li>
+                <input type="radio" name="attr_competence_value12" value="1" checked><span></span>
+                <input type="radio" name="attr_competence_value12" value="2"><span></span>
+                <input type="radio" name="attr_competence_value12" value="3"><span></span>
+                <input type="radio" name="attr_competence_value12" value="4"><span></span>
+                <input type="radio" name="attr_competence_value12" value="5"><span></span>
+            </li>
+            <li><input type="number" name="attr_competence_value12" value="1"></li>
+            <li><input type="checkbox" name="attr_avantage12" value="-1"><span>-1</span></li>
+            <li><input type="checkbox" name="attr_desavantage12" value="+1"><span>+1</span></li><br>
+        </ul>
+    </div>
+    
+    <br>
+    
+    <div class="sheet-information sheet-design1">
+        <ul>
+            <li>
+                <p class="sheet-info1">α Nom </p>
+                <input type="text" name="attr_character_name" placeholder="..........">
+            </li>
+            <li>
+                <p class="sheet-info1">β Surnom </p>
+                <input type="text" name="attr_surnom" placeholder="..........">
+            </li>
+            <li>
+                <p class="sheet-info1">γ Âge </p>
+                <input type="text" name="attr_age" placeholder=".......... ans">
+            </li>
+            <li>
+                <p class="sheet-info1">δ Origine </p>
+                <input type="text" name="attr_origine" placeholder="..........">
+            </li>
+            <li>
+                <p class="sheet-info1">ε Formation </p>
+                <input type="text" name="attr_formation" placeholder="..........">
+            </li>
+        </ul>
+    </div>
+    
+    <br>
+    
+    <div class="sheet-equipement sheet-design1">
+        <ul>
+            <li>
+                <input type="checkbox" name="attr_equipement_check"><span></span>
+                <span>Équipements</span>
+                <span name="attr_equipement"></span>
+                <textarea name="attr_equipement"></textarea>
+            </li>
+        </ul>
+        
+        <ul>
+            <li>
+                <input type="checkbox" name="attr_objet_check"><span></span>
+                <span>Objet</span>
+                <span name="attr_objet"></span>
+                <textarea name="attr_objet"></textarea>
+            </li>
+        </ul>
+        
+        <br>
+        
+        <ul>
+            <li>
+                <input type="checkbox" name="attr_notes_check"><span></span>
+                <span>Notes</span>
+                <span name="attr_notes"></span>
+                <textarea name="attr_notes"></textarea>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+<script type="text/worker">
+    on("change:vie1", function() {
+        getAttrs(["vie1","modif1","modif2","modif3","modif4"], function(values) {
+            if (values.vie1 >= 3) {
+                setAttrs({ modif1: 1 });
+            }
+            else{
+                setAttrs({ modif1: 0 });
+            };
+            if (values.vie1 >= 4) {
+                setAttrs({ modif2: 1 });
+            }
+            else{
+                setAttrs({ modif2: 0 });
+            };
+            if (values.vie1 >= 5) {
+                setAttrs({ modif3: 1 });
+            }
+            else{
+                setAttrs({ modif3: 0 });
+            };
+            if (values.vie1 >= 6) {
+                setAttrs({ modif4: 1 });
+            }
+            else{
+                setAttrs({ modif4: 0 });
+            };
+        });
+    });
+</script>
