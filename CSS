@@ -1,0 +1,327 @@
+.charsheet 
+{ 
+    font-family: 'Arial';
+    width: 850px;
+    border: 1px solid #000000;
+    box-sizing: border-box;}
+
+.charsheet *, .charsheet *:before, .charsheet *:after {
+    box-sizing: inherit;
+}
+
+/* Redéfinie des trucs à zéro, retirer les puces des listes et la décoraction des liens */
+.charsheet h1, .charsheet h2, .charsheet h3, .charsheet h4, .charsheeth5, 
+.charsheet h6, .charsheet a, .charsheet p, .charsheet span, .charsheet div,
+.charsheet figure, .charsheet img, .charsheet ul, .charsheet li, .charsheet select, .charsheet option 
+.charsheet body, .charsheet fieldset, .charsheet input, .charsheet label, .charsheet textarea 
+{
+	margin: 0; padding: 0; border: 0;
+	list-style: none;
+	background: transparent;
+	box-shadow: 0 0 0 #000000; border-radius: 0;
+}
+
+/* ■ ■ ■ ■ PORTIA ■ ■ ■ ■ */
+
+.sheet-portia .sheet-attribut{ position: relative;}
+
+.sheet-portia .sheet-design1{ 
+    background: #ffffff;
+    border: 1px solid #000000;
+    padding: 10px;
+    box-shadow: 3px 3px 1px #000000;
+}
+
+.sheet-portia .sheet-attribut ul li{ 
+    display: inline-block;
+    margin: 2px 0;
+}
+
+.sheet-portia .sheet-attribut input[type="text"]{
+    vertical-align: middle;
+    width: 150px;
+    height: 30px;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.sheet-portia .sheet-attribut input[type="number"]{
+    vertical-align: middle;
+    text-align: center;
+    border: 1px solid #000000;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    margin-left: 20px;
+    transition: 0.3s all ease-in;
+}
+
+.sheet-portia .sheet-attribut input[type="number"]:hover{
+    width: 45px;
+}
+
+/* ----- Bouton radio, span */
+        .sheet-portia .sheet-attribut ul li input[type="radio"]{
+            opacity: 0;
+            position: relative;
+            z-index: 1;
+            vertical-align: middle;
+            margin-right: -30px;
+            height: 30px;
+            width: 30px;
+        }
+        
+        .sheet-portia .sheet-attribut ul li input[type="radio"] + span{
+            vertical-align: middle;
+            display: inline-block;
+            background: url('https://raw.githubusercontent.com/MiniSteff/Test/master/round-star.png') no-repeat;
+            background-size: 30px 30px;
+            height: 30px;
+            width: 30px;
+            transition: 0.3s all ease-in;
+        }
+        
+        .sheet-portia .sheet-attribut ul li input[type="radio"]:hover + span{ opacity: 1;}
+        
+        .sheet-portia .sheet-attribut ul li input[type="radio"]:checked ~ span{ opacity: 0.3;}
+        
+        .sheet-portia .sheet-attribut ul li input[type="radio"]:checked + span{ opacity: 1;}
+/* ---------------------- */
+
+/* ----- Bouton radio, span */
+        .sheet-portia .sheet-attribut .sheet-vie{
+            position: absolute;
+            z-index: 1;
+            opacity: 0;
+            right: 10px;
+            height: 25px;
+            width: 25px;
+        }
+        
+        .sheet-portia .sheet-attribut .sheet-vie + span{
+            position: absolute;
+            text-align: center;
+            font-size: 20px;
+            line-height: 25px;
+            right: 10px;
+            top: 10px;
+            display: inline-block;
+            height: 25px;
+            width: 25px;
+            border: 1px solid #000000;
+            border-top: 0px;
+            background: #666666;
+            transition: 0.1s all ease-in;
+        }
+        
+        .sheet-portia .sheet-attribut .sheet-vie:checked ~ span{ opacity: 0.3;}
+        .sheet-portia .sheet-attribut .sheet-vie:checked + span{ opacity: 1;}
+        
+        .sheet-portia .sheet-attribut .sheet-vie[value="0"] + span{ background: transparent; border: 0px; opacity: 0.1;}
+
+        .sheet-portia .sheet-attribut .sheet-vie[value="2"] + span{ background: #555555;}
+        .sheet-portia .sheet-attribut .sheet-vie[value="3"] + span{ background: #444444;}
+        .sheet-portia .sheet-attribut .sheet-vie[value="4"] + span{ background: #333333;}
+        .sheet-portia .sheet-attribut .sheet-vie[value="5"] + span{ background: #222222;}
+        .sheet-portia .sheet-attribut .sheet-vie[value="6"] + span{ background: #111111;}
+        
+        .sheet-portia .sheet-attribut .sheet-vie[value="0"], .sheet-portia .sheet-attribut .sheet-vie[value="0"] + span{ top: 0; right: 35px;}
+        .sheet-portia .sheet-attribut .sheet-vie[value="1"], .sheet-portia .sheet-attribut .sheet-vie[value="1"] + span{ top: 0;}
+        .sheet-portia .sheet-attribut .sheet-vie[value="2"], .sheet-portia .sheet-attribut .sheet-vie[value="2"] + span{ top: 25px;}
+        .sheet-portia .sheet-attribut .sheet-vie[value="3"], .sheet-portia .sheet-attribut .sheet-vie[value="3"] + span, .sheet-portia .sheet-attribut .sheet-vie[value="3"] + span + p{ top: 50px;}
+        .sheet-portia .sheet-attribut .sheet-vie[value="4"], .sheet-portia .sheet-attribut .sheet-vie[value="4"] + span, .sheet-portia .sheet-attribut .sheet-vie[value="4"] + span + p{ top: 75px;}
+        .sheet-portia .sheet-attribut .sheet-vie[value="5"], .sheet-portia .sheet-attribut .sheet-vie[value="5"] + span, .sheet-portia .sheet-attribut .sheet-vie[value="5"] + span + p{ top: 100px;}
+        .sheet-portia .sheet-attribut .sheet-vie[value="6"], .sheet-portia .sheet-attribut .sheet-vie[value="6"] + span, .sheet-portia .sheet-attribut .sheet-vie[value="6"] + span + p{ top: 125px;}
+        
+        .sheet-portia .sheet-attribut .sheet-vie:hover + span{opacity: 1;}
+        
+        .sheet-portia .sheet-attribut .sheet-vie ~ p{
+            position: absolute;
+            right: 45px;
+            padding-top: 3px;
+            font-size: 11px;
+            font-style: italic;
+            transform-origin: 50% right;
+        }
+/* ---------------------- */
+
+.sheet-portia .sheet-competence ul{ 
+    width: 400px; 
+    margin-bottom: 2px;
+    display: inline-block;}
+
+.sheet-portia .sheet-competence li{ 
+    display: inline-block;
+    margin: 2px 0;}
+
+.sheet-portia .sheet-competence input[type="text"]{
+    vertical-align: middle;
+    width: 135px;
+    height: 20px;
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+.sheet-portia .sheet-competence input[type="number"]{
+    vertical-align: middle;
+    text-align: center;
+    border: 1px solid #000000;
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+    margin-left: 10px;
+    transition: 0.3s all ease-in;
+}
+
+.sheet-portia .sheet-competence input[type="number"]:hover{
+    width: 35px;
+}
+
+.sheet-portia .sheet-competence .sheet-titre1{
+    display: block;
+    width: 400px;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* ----- Bouton radio, span */
+        .sheet-portia .sheet-competence input[type="radio"]{
+            opacity: 0;
+            position: relative;
+            z-index: 1;
+            vertical-align: middle;
+            margin-right: -20px;
+            height: 20px;
+            width: 20px;
+        }
+        
+        .sheet-portia .sheet-competence input[type="radio"] + span{
+            vertical-align: middle;
+            display: inline-block;
+            background: url('https://raw.githubusercontent.com/MiniSteff/Test/master/moon.png') no-repeat;
+            background-size: 20px 20px;
+            height: 20px;
+            width: 20px;
+            transition: 0.3s all ease-in;
+        }
+        
+        .sheet-portia .sheet-competence input[type="radio"]:hover + span{ opacity: 1;}
+        
+        .sheet-portia .sheet-competence input[type="radio"]:checked ~ span{ opacity: 0.3;}
+        
+        .sheet-portia .sheet-competence input[type="radio"]:checked + span{ opacity: 1;}
+/* ---------------------- */
+
+/* ----- Avantage, désavantage */
+        .sheet-portia .sheet-competence input[type="checkbox"]{
+            opacity: 0;
+            position: relative;
+            z-index: 1;
+            vertical-align: middle;
+            margin-right: -20px;
+            height: 20px;
+            width: 20px;
+        }
+        
+        .sheet-portia .sheet-competence input[type="checkbox"] + span{
+            vertical-align: top;
+            display: inline-block;
+            background: #000000;
+            color: #ffffff;
+            opacity: 0.15;
+            height: 20px;
+            width: 20px;
+            font-size: 12px;
+            border: 1px solid #000000;
+            text-align: center;
+            transition: 0.3s all ease-in;
+        }
+        
+        .sheet-portia .sheet-competence input[type="checkbox"]:hover + span{ opacity: 1;}
+        
+        .sheet-portia .sheet-competence input[type="checkbox"]:checked + span{ opacity: 1;}
+/* ---------------------- */
+
+.sheet-portia .sheet-information .sheet-info1{
+    display: inline-block;
+    width: 90px;
+}
+
+.sheet-portia .sheet-information input[type="text"]{ font-style: italic;}
+
+
+
+
+
+.sheet-portia .sheet-equipement ul:nth-child(1),
+.sheet-portia .sheet-equipement ul:nth-child(2){
+    vertical-align: top;
+    display: inline-block;
+    width: 390px;
+}
+
+.sheet-portia .sheet-equipement ul:nth-child(1){
+    border-right: 1px dashed #000000;
+    padding-right: 15px;
+    width: 400px;
+    margin-right: 10px;
+}
+
+.sheet-portia .sheet-equipement input[type="checkbox"] + span + span + span + textarea{ 
+    display: none; 
+    background: #eeeeee;
+    padding: 10px;
+    white-space: pre-wrap;}
+    
+.sheet-portia .sheet-equipement input[type="checkbox"]:checked + span + span + span + textarea { display: block;}
+
+.sheet-portia .sheet-equipement input[type="checkbox"] + span + span + span{ display: block; white-space: pre-wrap;}
+.sheet-portia .sheet-equipement input[type="checkbox"]:checked + span + span + span{ display: none;}
+
+.sheet-portia .sheet-equipement input[type="checkbox"]{
+    opacity: 0;
+    position: relative;
+    z-index: 1;
+    vertical-align: middle;
+    margin-right: -20px;
+    height: 20px;
+    width: 20px;
+}
+
+.sheet-portia .sheet-equipement input[type="checkbox"] + span{
+    opacity: 0.3;
+    display: inline-block;
+    vertical-align: middle;
+    background: url('https://raw.githubusercontent.com/MiniSteff/Test/master/feather.png') no-repeat;
+    background-size: 20px 20px;
+    height: 20px;
+    width: 20px;
+    transition: 0.2s all ease-in;
+}
+
+.sheet-portia .sheet-equipement input[type="checkbox"]:hover + span,
+.sheet-portia .sheet-equipement input[type="checkbox"]:checked + span{ opacity: 1;}
+
+
+
+
+
+
+
+
+
+input[type='number']        {    -moz-appearance:textfield;}
+input[type='number']:hover  {    -moz-appearance:none;}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  display: none; 
+  margin: 0; 
+}
+
+.sheet-portia li:hover input[type=number]::-webkit-inner-spin-button, 
+.sheet-portia li:hover input[type=number]::-webkit-outer-spin-button { 
+  display: block; 
+  margin: 0; 
+}
